@@ -1,14 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content> 
+  <div class="outer" style="height:100vh; width: 100%">
+    <span class="inner">   
+      <H1>{{ result }}</H1>   
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Enter work time</ion-card-title>
+        </ion-card-header>      
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Start time</ion-label>
+            <ion-datetime displayFormat="DD MM YY H:mm" name="start" [(ngModel)]="dates.start"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-label>End time</ion-label>
+            <ion-datetime displayFormat="DD MM YY H:mm " name="end" [(ngModel)]="dates.end"></ion-datetime>
+          </ion-item>
+          <br>
+          <ion-button color="primary" (click)="calculate()">Calculate</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </span>
   </div>
 </ion-content>

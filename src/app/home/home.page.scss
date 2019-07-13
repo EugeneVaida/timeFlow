@@ -1,1 +1,16 @@
-
+.outer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* добавим горизонтальное центрирование */
+  .outer {
+    text-align: center;
+  }
