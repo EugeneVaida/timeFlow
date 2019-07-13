@@ -1,8 +1,12 @@
 {
-  "name": "timecounter",
+  "name": "timeCounter",
   "version": "0.0.1",
   "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",  
+  "homepage": "https://ionicframework.com/",
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
