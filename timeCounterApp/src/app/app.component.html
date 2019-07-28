@@ -1,0 +1,23 @@
+<div class="outer" style="height:100vh; width: 100%">
+  <div class="inner">    
+    <div class="container">
+        <H1>{{ result }}</H1>   
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Start at</label>
+              <input type="datetime-local" class="form-control" name="start" [(ngModel)]="dates.start" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">End at</label>
+              <input type="datetime-local" class="form-control" name="end" [(ngModel)]="dates.end" id="exampleInputPassword1">
+            </div>            
+            <button (click)="calculate()" class="btn btn-primary">Count</button>
+          </form>
+    </div>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

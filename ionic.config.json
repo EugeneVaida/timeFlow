@@ -1,7 +1,0 @@
-{
-  "name": "timeCounter",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
